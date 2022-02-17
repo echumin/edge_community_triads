@@ -1,6 +1,5 @@
 % Evgeny J Chumin, Indiana University, 2022
 
-
 % load edge community matrix and hemisphere indices.
 % This is a 132 node matrix with 100 cortical Schaefer nodes
 % and 32 subcortical Tian Scale 2 nodes.
@@ -109,33 +108,3 @@ ylabel('Touch Nodes (Schaefer 100)')
 title({'Touch Node Edges (Schaefer 100) of',...
         'Forked Triads in Edge Community 5',...
             'Connected to the 10th Reference Node (Tian II node 10)'})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
