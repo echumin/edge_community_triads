@@ -94,7 +94,7 @@ title({'Counts of Forked Triads in Edge Community 5',...
 % A set of binary matrices showing the cortical edges for a particular triad
 % type, of a particular edge community. (one for each reference node).
 
-% A 3 by 1 cell closed loop, forked, L-shape, in that order), 
+% A 3 by 1 cell (closed loop, forked, L-shape, in that order), 
 % where each triad type (cell element) contains a 4D matrix, of touch-by-touch 
 % node binary matrices (row, column), for each reference node (3rd dimention),
 % for each edge community (4th dimention).

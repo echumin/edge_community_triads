@@ -30,9 +30,16 @@ function [tri_counter,trifrac_by_comm,cid_by_comm,tri_by_hemi,ntriad,cedge_by_co
 %                   rows and counts of each touch node appearing in triads 
 %                   with that ref node, separated by edge community on the 
 %                   3rd dimention.  
-%   tri_by_hemi
-%   ntriad
-%   cedge_by_comm
+%   tri_by_hemi     - 3 (triad-type) element cell with ref_nodes on the
+%                   rows, triad lateralization (ipsilateral, bilateral,
+%                   contralateral) on the columns, by edge community on the
+%                   3rd dimention. Values are counts.
+%   ntriad          - Total number of triads for each ref_node to all
+%                   touch_nodes.
+%   cedge_by_comm   - 3 (triad type) element cell, where each triad type 
+%                   (cell element) contains a 4D matrix, of touch-by-touch 
+%                   node binary matrices (row, column), for each reference 
+%                   node (3rd dimention), for each edge community (4th dimention).
 %
 % TRIAD TYPES
 %   *denotes edges that touch the 'reference' (R) node around which the 
@@ -46,7 +53,8 @@ function [tri_counter,trifrac_by_comm,cid_by_comm,tri_by_hemi,ntriad,cedge_by_co
 %   4 - A*:B*:C   - three edge communties (DIVERSE)
 
 
-% 2021 - Evgeny Chumin, IUB: Original Version 
+% 2021 - Evgeny Chumin, Indina University Bloomington: Original Version 
+% 2022 - Evgeny Chumin, Added documentation and comments. 
 %%
 if size(input_mat,1)~=size(input_mat,2)
     fprintf(2,'Input matrix is not square.\n')
